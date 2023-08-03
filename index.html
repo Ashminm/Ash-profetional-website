@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>professional Website</title>
+    <title>Ashmin-web</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/6a07d98646.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image" href="img/IOS_Google_icon.png">
@@ -15,16 +15,15 @@
         <div class="container">
             <nav>
                <a href="#header"><p class="logo-text"> <i class="fa-brands fa-asymmetrik"></i>Ashm<span>i</span>n</p></a> 
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fas fa-times" onclick="colsemenu()"></i>
                 </ul>
-               
-                <i class="fa-solid fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text"> 
                 <div class="line-left">
@@ -175,7 +174,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
+                    <h1 class="sub-title sub-left">Contact me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> ashminstafy@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> (+91) 7034617785</p>
                     <div class="social-icons">
@@ -208,6 +207,20 @@
   
 
     <!---------------------------   end contact   ------------------->
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0"
+
+        }
+        function colsemenu(){
+            sidemeu.style.right = "-200px"
+            
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  
 
