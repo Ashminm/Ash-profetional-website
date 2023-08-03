@@ -455,6 +455,10 @@ nav .fas{
     /*background image */
     #header {
         background-image: url(img/smal-screen.png);
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
     }
 
     nav .fas{
